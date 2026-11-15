@@ -382,6 +382,16 @@ h1,h2,h3{letter-spacing:-.015em;line-height:1.15}
 @media (max-width:420px){.nav-cta{font-size:.78rem;padding:.4rem .7rem}.idiomas summary{padding:.3rem .5rem}
   .nav-brand span{font-size:1rem}}
 
+/* lista de idiomas: com 24 idiomas ela passava da tela no celular e não rolava (dono, 15/11/2026) */
+.idiomas-lista{max-height:min(70vh,560px);overflow-y:auto;overscroll-behavior:contain;
+  display:grid;grid-template-columns:1fr;gap:2px;min-width:13rem}
+.idiomas-lista a{display:flex;align-items:center;gap:.55rem;white-space:nowrap}
+.bandeira{font-size:1.15rem;line-height:1;flex:none}
+@media (max-width:760px){
+  .idiomas-lista{position:fixed;top:64px;left:10px;right:10px;max-height:calc(100vh - 80px);
+    grid-template-columns:1fr 1fr;padding:.6rem;box-shadow:var(--sombra)}
+}
+
 /* rodapé: idiomas em grade */
 .nota-traducao{font-size:.8rem;color:var(--dim);margin:.4rem 0 .8rem;opacity:.85}
 .footer-idiomas{display:flex;flex-wrap:wrap;gap:.4rem .9rem}
