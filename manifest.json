@@ -1,1 +1,1 @@
-{"name": "MONAD", "short_name": "MONAD", "start_url": "./index.html", "display": "browser", "background_color": "#0A0A0F", "theme_color": "#00D4FF", "icons": [{"src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml"}]}
+{"name": "MONAD", "short_name": "MONAD", "start_url": "./index.html", "display": "browser", "background_color": "#0A0A0F", "theme_color": "#00D4FF", "icons": [{"src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml"}, {"src": "assets/mascote.png", "sizes": "512x512", "type": "image/png"}]}

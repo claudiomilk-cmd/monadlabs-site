@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Seguridad — MONAD</title>
+<meta name="description" content="Cómo MONAD protege tus mensajes y tu dinero, con transparencia sobre lo que ya existe y lo que aún falta.">
+<meta property="og:title" content="Seguridad — MONAD">
+<meta property="og:description" content="Cómo MONAD protege tus mensajes y tu dinero, con transparencia sobre lo que ya existe y lo que aún falta.">
+<meta property="og:locale" content="es">
+<meta property="og:image" content="../assets/compartilhar.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#00D4FF">
+<link rel="alternate" hreflang="pt-BR" href="../seguranca.html"><link rel="alternate" hreflang="en" href="../en/seguranca.html"><link rel="alternate" hreflang="es" href="../es/seguranca.html"><link rel="alternate" hreflang="fr" href="../fr/seguranca.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/mascote.png">
+<link rel="manifest" href="../manifest.json">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="topnav">
+  <a class="nav-brand" href="index.html">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <circle cx="14" cy="14" r="13" stroke="#00D4FF" stroke-width="1.5"/>
+      <path d="M7 14 L14 7 L21 14 L14 21 Z" fill="#00D4FF" opacity="0.15" stroke="#00D4FF" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="3" fill="#00D4FF"/>
+    </svg>
+    <span>MONAD</span>
+  </a>
+  <div class="nav-links"><a href="index.html">Inicio</a><a href="recursos.html">Funciones</a><a href="seguranca.html" class="active">Seguridad</a><a href="agents.html">Agentes</a><a href="duvidas.html">Preguntas</a><a href="blog/">Novedades</a><a href="apoiar.html">Apoyar</a></div>
+  <details class="idiomas"><summary aria-label="Idioma">🌐 ES</summary>
+    <div class="idiomas-lista"><a href="../seguranca.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../en/seguranca.html" hreflang="en" lang="en">English</a><a href="../es/seguranca.html" hreflang="es" lang="es" class="active" aria-current="true">Español</a><a href="../fr/seguranca.html" hreflang="fr" lang="fr">Français</a></div></details>
+  <a href="download.html" class="nav-cta">Descargar</a>
+</nav>
+<section class="hero hero-sm"><div class="hero-inner">
+  <div class="mascote-hero"><svg xmlns="http://www.w3.org/2000/svg" class="coruja coruja-anima cj-escudo" width="170" height="195" viewBox="0 0 200 230" role="img" aria-label="A corujinha do MONAD segurando um escudo"><ellipse cx="100" cy="222" rx="52" ry="6" fill="#000" opacity=".35" class="cj-sombra"/><g class="cj-corpo"><path d="M150 134 C166 146 168 180 152 196 L140 170 Z" fill="#9A6BE0" stroke="#3B2373" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M58 66 L46 26 C62 30 76 42 82 52 Z" fill="#9A6BE0" stroke="#3B2373" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M142 66 L154 26 C138 30 124 42 118 52 Z" fill="#9A6BE0" stroke="#3B2373" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M84 52 Q100 40 116 52" fill="none" stroke="#3B2373" stroke-width="4"/><ellipse cx="100" cy="58" rx="6" ry="3" fill="#3B2373"/><path d="M100 44 C150 44 166 86 164 128 C162 176 136 212 100 212 C64 212 38 176 36 128 C34 86 50 44 100 44 Z" fill="#9A6BE0" stroke="#3B2373" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M86 152 q7 8 14 0" fill="none" stroke="#3B2373" stroke-width="3" opacity=".75"/><path d="M103 152 q7 8 14 0" fill="none" stroke="#3B2373" stroke-width="3" opacity=".75"/><path d="M94 168 q7 8 14 0" fill="none" stroke="#3B2373" stroke-width="3" opacity=".75"/><path d="M111 166 q7 8 14 0" fill="none" stroke="#3B2373" stroke-width="3" opacity=".75"/><path d="M77 167 q7 8 14 0" fill="none" stroke="#3B2373" stroke-width="3" opacity=".75"/><path d="M100 82 C86 60 46 62 46 98 C46 132 86 136 100 114 C114 136 154 132 154 98 C154 62 114 60 100 82 Z" fill="#1B1F4B"/><circle cx="74" cy="99" r="22" fill="#E8B24A" stroke="#3B2373" stroke-width="3"/><g class="cj-pupila"><circle cx="74" cy="100" r="14" fill="#2A1850"/><circle cx="79" cy="93" r="5" fill="#fff"/><circle cx="68" cy="107" r="2.2" fill="#fff" opacity=".7"/></g><circle cx="126" cy="99" r="22" fill="#E8B24A" stroke="#3B2373" stroke-width="3"/><g class="cj-pupila"><circle cx="126" cy="100" r="14" fill="#2A1850"/><circle cx="131" cy="93" r="5" fill="#fff"/><circle cx="120" cy="107" r="2.2" fill="#fff" opacity=".7"/></g><g class="cj-palpebra"><rect x="51" y="75" width="46" height="48" rx="23" fill="#9A6BE0"/><rect x="103" y="75" width="46" height="48" rx="23" fill="#9A6BE0"/></g><path d="M92 112 Q100 106 108 112 L101 130 Q99 132 97 129 Z" fill="#F2A65A" stroke="#3B2373" stroke-width="3"/><path d="M80 210 l-4 10 M86 211 l0 10 M92 210 l4 10" stroke="#F2A65A" stroke-width="5" stroke-linecap="round"/><path d="M108 210 l-4 10 M114 211 l0 10 M120 210 l4 10" stroke="#F2A65A" stroke-width="5" stroke-linecap="round"/><g class="cj-asa"><path d="M58 128 C34 136 30 178 52 196 C66 206 84 200 88 186 C92 160 80 132 58 128 Z" fill="#B48CF0" stroke="#3B2373" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M48 158 q8 6 16 0 M46 174 q9 7 18 0 M54 189 q8 5 15 -1" fill="none" stroke="#3B2373" stroke-width="3"/></g><g class="cj-objeto"><path d="M122 140 L150 130 L178 140 C178 172 166 190 150 198 C134 190 122 172 122 140 Z" fill="#0F1A2E" stroke="#00D4FF" stroke-width="4"/><path d="M138 162 l9 9 l17 -19" fill="none" stroke="#00D4FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg></div><h1>Cómo te <em>protegemos</em></h1><p>Sin letra pequeña: lo que ya hacemos y lo que todavía no.</p>
+</div></section>
+<section class="section"><div class="section-inner prosa">
+  <h2>Lo que ya funciona</h2>
+  <ul><li><strong>Cifrado de extremo a extremo.</strong> Tus mensajes se cifran en tu dispositivo, y la clave para descifrarlos existe solo en los dispositivos de quienes conversan. El servidor guarda únicamente contenido cifrado y no tiene forma de abrirlo.</li><li><strong>Tus palabras de recuperación son tu dinero.</strong> Quien tiene las palabras controla la billetera. Nunca se las envíes a nadie, ni siquiera a nosotros.</li><li><strong>Cada solicitud de la app lleva firma digital.</strong> Tu dispositivo firma todo lo que envía. Una contraseña o un código robado con un correo falso no basta para tocar tu cuenta.</li><li><strong>Cada versión está firmada.</strong> La app verifica la firma antes de actualizarse, y la página de descarga muestra la huella digital (SHA-256) de cada archivo para que la compruebes.</li><li><strong>Agentes de seguridad las 24 horas.</strong> BANE y HAZE detectan y bloquean ataques; RUNE prueba la app cada noche, como la usaría una persona real.</li><li><strong>Frenos contra grandes robos.</strong> Las billeteras de la red tienen límites de retiro por hora y un botón de congelación de emergencia, lecciones aprendidas de ataques a grandes exchanges.</li></ul>
+  <h2>Lo que aún no está listo</h2>
+  <ul><li>Hoy la red parte de un ordenador principal mantenido por el proyecto. Cada versión hace que los dispositivos dependan menos de él.</li><li>Las palabras de recuperación de la billetera todavía se generan en el ordenador principal y se entregan a tu dispositivo. Estamos cambiándolo para que se generen solo en tu dispositivo.</li><li>El código aún no está abierto a auditoría pública.</li><li>Todavía no hay versión para iPhone.</li></ul>
+  <h2>¿Encontraste un fallo de seguridad?</h2>
+  <p>Escribe al soporte dentro de la app (AURA → Soporte). Los reportes de seguridad tienen prioridad sobre todo lo demás.</p>
+</div></section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="accent">MONAD</span> — la app de la red MONODA</div>
+    <div class="footer-links"><a href="index.html">Inicio</a><a href="recursos.html">Funciones</a><a href="seguranca.html">Seguridad</a><a href="agents.html">Agentes</a><a href="duvidas.html">Preguntas</a><a href="blog/">Novedades</a><a href="apoiar.html">Apoyar</a><a href="download.html">Descargar</a></div>
+    <div class="footer-idiomas"><a href="../seguranca.html" lang="pt-BR">Português</a> · <a href="../en/seguranca.html" lang="en">English</a> · <a href="../es/seguranca.html" lang="es">Español</a> · <a href="../fr/seguranca.html" lang="fr">Français</a></div>
+    <div class="footer-meta">
+      <span>Este sitio está alojado en IPFS, una red de archivos distribuida en muchos ordenadores</span>
+      <span class="sep">·</span>
+      <span>Mantenido por los agentes de MONAD</span>
+      <span class="sep">·</span>
+      <span>© 2026 MONODA</span>
+    </div>
+  </div>
+</footer>
+</body></html>

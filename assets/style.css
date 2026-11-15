@@ -275,3 +275,43 @@ a.nav-brand{text-decoration:none;color:inherit}
 .endereco code{word-break:break-all;font-size:.8rem}
 .promo{color:var(--accent);font-weight:600;font-size:.9rem}
 article.post-card h2{font-size:1.15rem;margin:.3rem 0 .6rem}
+
+/* ── 14/11/2026: seletor de idioma ── */
+.idiomas{position:relative;margin-left:1rem}
+.idiomas summary{list-style:none;cursor:pointer;color:var(--dim);font-size:.85rem;padding:.35rem .6rem;border:1px solid var(--border);border-radius:20px}
+.idiomas summary::-webkit-details-marker{display:none}
+.idiomas[open] summary,.idiomas summary:hover{color:var(--text)}
+.idiomas-lista{position:absolute;right:0;top:calc(100% + .4rem);background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.4rem;display:flex;flex-direction:column;min-width:9rem;z-index:50}
+.idiomas-lista a{color:var(--dim);padding:.45rem .7rem;border-radius:6px;font-size:.9rem}
+.idiomas-lista a:hover{background:rgba(0,212,255,.08);color:var(--text);text-decoration:none}
+.idiomas-lista a.active{color:var(--accent)}
+.footer-idiomas{margin:.6rem 0;font-size:.85rem;color:var(--dim)}
+.footer-idiomas a{color:var(--dim)}
+@media (max-width:760px){.idiomas{margin-left:auto}.nav-cta{margin-left:.5rem}}
+
+/* ── 14/11/2026: a corujinha (mascote) ── */
+.coruja{display:block;margin:0 auto;max-width:100%;height:auto;overflow:visible}
+.coruja .cj-corpo,.coruja .cj-asa,.coruja .cj-palpebra,.coruja .cj-pupila,.coruja .cj-objeto,.coruja .cj-sombra{transform-box:fill-box}
+.coruja .cj-palpebra{transform-origin:50% 0;transform:scaleY(0)}
+@media (prefers-reduced-motion:no-preference){
+  .coruja-anima .cj-corpo{animation:cj-flutua 4s ease-in-out infinite;transform-origin:50% 100%}
+  .coruja-anima .cj-sombra{animation:cj-sombra 4s ease-in-out infinite;transform-origin:50% 50%}
+  .coruja-anima .cj-palpebra{animation:cj-pisca 5s infinite}
+  .coruja-anima .cj-pupila{animation:cj-olha 9s ease-in-out infinite}
+  .coruja-anima .cj-acena{animation:cj-acena 1.6s ease-in-out infinite;transform-origin:80% 95%}
+  .coruja-anima .cj-pulsa{animation:cj-pulsa 1.4s ease-in-out infinite;transform-origin:50% 60%}
+  .coruja-anima .cj-linha{animation:cj-linha 2.4s ease-in-out infinite}
+  .coruja-anima.cj-escudo .cj-objeto{animation:cj-brilho 3s ease-in-out infinite}
+}
+@keyframes cj-flutua{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(-1.5deg)}}
+@keyframes cj-sombra{0%,100%{transform:scaleX(1);opacity:.35}50%{transform:scaleX(.85);opacity:.22}}
+@keyframes cj-pisca{0%,92%,100%{transform:scaleY(0)}95%{transform:scaleY(1)}}
+@keyframes cj-olha{0%,40%,100%{transform:translateX(0)}50%,60%{transform:translateX(-3px)}70%,80%{transform:translateX(3px)}}
+@keyframes cj-acena{0%,100%{transform:rotate(0)}50%{transform:rotate(-18deg)}}
+@keyframes cj-pulsa{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@keyframes cj-linha{0%,100%{stroke-opacity:.15}50%{stroke-opacity:.6}}
+@keyframes cj-brilho{0%,100%{filter:none}50%{filter:drop-shadow(0 0 6px rgba(0,212,255,.7))}}
+.mascote-hero{max-width:220px;margin:0 auto 1rem}
+.hero-arte .coruja{width:min(320px,80%);height:auto}
+.mascote-lado{display:flex;align-items:center;gap:1.5rem;justify-content:center;flex-wrap:wrap}
+.mascote-lado .coruja{margin:0}
