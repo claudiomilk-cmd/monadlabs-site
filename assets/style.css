@@ -316,6 +316,14 @@ article.post-card h2{font-size:1.15rem;margin:.3rem 0 .6rem}
 .mascote-lado{display:flex;align-items:center;gap:1.5rem;justify-content:center;flex-wrap:wrap}
 .mascote-lado .coruja{margin:0}
 
+/* redes oficiais no rodapé: pílulas com ícone, área de toque ≥ 44px */
+.footer-redes{display:flex;gap:.75rem;flex-wrap:wrap;margin:1rem 0 1.25rem}
+.footer-redes .rede{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:.5rem 1rem;border-radius:999px;
+  border:1px solid rgba(0,212,255,.28);background:rgba(0,212,255,.06);color:#E6EDF3;font-size:.9rem;font-weight:600;
+  text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+.footer-redes .rede:hover,.footer-redes .rede:focus-visible{border-color:#00D4FF;background:rgba(0,212,255,.14);transform:translateY(-1px)}
+.footer-redes .rede svg{flex:none;color:#00D4FF}
+[dir=rtl] .footer-redes .rede span{direction:ltr;unicode-bidi:isolate}
 /* tipografia que acompanha a tela (clamp) e ritmo vertical consistente (múltiplos de 8px) */
 :root{--raio:16px;--sombra:0 10px 40px rgba(0,0,0,.35);--grad:linear-gradient(135deg,#00D4FF 0%,#7B8CDE 55%,#B48CF0 100%)}
 body{font-size:clamp(15px,1.05vw + 10px,17px);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
